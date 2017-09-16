@@ -1,0 +1,15 @@
+﻿<section  class="options" ng-init="init()">
+
+  <button class="back" ng-click="back()"></button>
+
+  <div class="divMiddle">
+
+    <p><h1><b>OPTIONS !!!</b></h1></p>
+    <form name="optionsForm" novalidate>
+      <input type="text" ng-model="newName" name="newName" placeholder="Your Name" ng-required="true"><br />
+      <button class="" ng-click="changeName(newName)" ng-disabled="optionsForm.newName.$invalid">Gata</button>
+    </form>
+
+</div>
+
+</section>

@@ -1,0 +1,39 @@
+﻿<section class="practice" ng-init="init()">
+
+  <button class="back" ng-click="back()"></button>
+
+  <br />
+  <br />
+  <center>
+    <div class="practiceImage">
+      <img src="./images/CAttack.gif" class="phoneDown" />
+      <img src="./images/v.png" ng-hide="result!=1" class="result" />
+      <img src="./images/x.png" ng-hide="result!=2" class="result" />
+    </div>
+  </center>
+  <br />
+  <div class="divMiddle calibrateText" ng-hide="result!=0">
+    <center>
+      Firstly, set your arm in Tierce position.
+      <br />
+      Once ready, press the button and execute the action. Let's see how well you master hand techniques.
+      <br />
+      <button class="toPractice calibrateBtn" ng-click="practice()">
+        Begin!
+      </button>
+    </center>
+  </div>
+  <div class="divMiddle calibrateText" ng-hide="result!=1">
+    <center>
+      Well done, {{FirstName}}!
+    </center>
+  </div>
+  <div class="divMiddle calibrateText" ng-hide="result!=2">
+    <center>
+      That's not the correct way to do it!
+    </center>
+  </div>
+
+
+
+</section>

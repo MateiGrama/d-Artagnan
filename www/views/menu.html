@@ -1,0 +1,44 @@
+﻿<section class="menu" ng-init="init()">
+
+  <button class="back" ng-click="backToHome()"></button>
+  <button class="optionsBtn gear" ng-click="options()"></button>
+
+  <div class="divMiddle divMenu">
+
+
+    <p class="intro"><b>{{intro}}</b></p>
+    <ul>
+      <li>
+        <p class="subtitle">Defensive</p>
+        <ul class="buttonList">
+          <li>
+            <button ng-click="toP3()" class="toPractice">Tierce</button>
+          </li>
+          <li>
+            <button ng-click="toP4()" class="toPractice">Quarte</button>
+          </li>
+          <li>
+            <button ng-click="toP5()" class="toPractice">Quinte</button>
+          </li>
+        </ul>
+      </li>
+
+      <li>
+        <p class="subtitle">Offensive</p>
+        <ul class="buttonList">
+          <li>
+            <button ng-click="toFAttack()" class="toPractice">Flank Attack</button>
+          </li>
+          <li>
+            <button ng-click="toCAttack()" class="toPractice">Chest Attack</button>
+          </li>
+          <li>
+            <button ng-click="toHAttack()" class="toPractice">Head Attack</button>
+          </li>
+        </ul>
+      </li>
+
+    </ul>
+  </div>
+
+</section>

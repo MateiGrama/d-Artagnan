@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html  ng-app="myApp">
+<head>
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width, user-scalable=no"> 
+
+    <link href="css/index.css" rel="stylesheet" />
+    
+    <script src="scripts/lib/angular.min.js"></script>
+    <script src="scripts/lib/angular-animate.min.js"></script>
+    <script src="scripts/lib/angular-route.min.js"></script>
+    <!--Contorllers:-->
+    <script src="scripts/app.js"></script>
+
+    <script src="scripts/controllers/homescreen.js"></script>
+    <script src="scripts/controllers/options.js"></script>
+    <script src="scripts/controllers/menu.js"></script>
+    <script src="scripts/controllers/calibrate.js"></script>
+    <!-- probe -->
+    <script src="scripts/controllers/probaFencing.js"></script>
+    <script src="scripts/controllers/probaFencing1.js"></script>
+    <!-- attacuri si parazi -->
+    <script src="scripts/controllers/tierce.js"></script>
+    <script src="scripts/controllers/quarte.js"></script>
+    <script src="scripts/controllers/quinte.js"></script>
+    <script src="scripts/controllers/fAttack.js"></script>
+    <script src="scripts/controllers/cAttack.js"></script>
+    <script src="scripts/controllers/hAttack.js"></script>
+
+    <script src="scripts/lib/ng-cordova.min.js"></script>
+
+    <script src="cordova.js"></script>
+    <script src="scripts/platformOverrides.js"></script>
+    <script src="scripts/lib/fastclick.js"></script>
+
+    <script src="scripts/lib/jquery-2.1.4.min.js"></script>
+
+    <!--
+        Customize the content security policy in the meta tag below as needed. Add 'unsafe-inline' to default-src to enable inline JavaScript.
+        For details, see http://go.microsoft.com/fwlink/?LinkID=617521
+    -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
+   
+   <title>BlankCordovaApp1</title>
+
+</head>
+
+<body ng-view>
+
+</body>
+</html>
